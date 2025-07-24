@@ -9,6 +9,7 @@ body {
   justify-content: center;
   /* margin: auto; */
   align-items: center;
+  background: black;
 }
 
 #circal {
@@ -16,7 +17,7 @@ body {
   width: 610px;
   height: 610px;
   border-radius: 100%;
-  background-color: red;
+  background-color: #0011ff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,19 +41,45 @@ body {
   gap: 23px;
 }
 
-#result{
+#result {
   width: 90%;
   height: 14vh;
-  background-color: transparent; 
+  background-color: transparent;
   border-radius: 20px;
   backdrop-filter: blur(8px);
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.79);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+#livedisplay {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 90%;
+  /* height: 50%; */
+  font-size: 30px;
+  margin: auto;
+}
+#finalresult {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 90%;
+  color: black;
+  /* height: 50%; */
+  margin: auto;
+  margin-top: 10px;
+  text-align: right;
+  border: none;
+  box-shadow: -9px -9px 16px rgba(94, 223, 252, 0.3), 0 0 12px rgba(0, 0, 0, 0.2) ;
+}
 
-#buttons{
+#buttons {
   width: 90%;
   height: auto;
   background-color: transparent;
@@ -63,31 +90,32 @@ body {
   gap: 10px;
   justify-content: center;
   align-items: center;
+  margin: auto;
+  margin-top: 20px;
 }
 
-button{
+input {
   width: 70px;
   height: 80px;
   border-radius: 16px;
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   border-left: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: none;
+  box-shadow: -8px -8px 16px rgba(164, 223, 255, 0.3), 0px 0px 9px rgba(0, 0, 0, 0.2);
   background-color: transparent;
   font-size: 40px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-button:nth-child(-n+4){
+input:nth-child(-n + 4) {
   height: 50px;
   border-radius: 10px;
+  color: rgb(157, 226, 226);
 }
 
-button:nth-last-child(2){
-  background-color:green;
-  width: 2vw;
-}
-
-button:nth-last-child(3){
-  background-color: green;
-  height: 20vh;
+input:nth-last-child(2) {
+  width: 15vw;
 }
